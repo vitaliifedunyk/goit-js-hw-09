@@ -1,12 +1,12 @@
-## vanilla-template
+## goit-js-hw-09
 
 ## 📄 Опис
-Базовий стартовий шаблон для невеликих фронтенд-проєктів на vanilla HTML, CSS та JavaScript.
+Навчальний фронтенд-проєкт `goit-js-hw-09`, зібраний на HTML, CSS та JavaScript з використанням Vite.
 
 ## 🚀 Як використовувати
 ```bash
-git clone https://github.com/vitaliifedunyk/vanilla-template.git
-cd vanilla-template
+git clone https://github.com/vitaliifedunyk/goit-js-hw-09.git
+cd goit-js-hw-09
 npm install
 npm run dev
 ```
@@ -32,5 +32,5 @@ npm run dev
 ```
 
 ## 👤 Автор
-**Студент курсу GoIT**  
+**vitaliifedunyk**  
 GitHub: https://github.com/vitaliifedunyk
