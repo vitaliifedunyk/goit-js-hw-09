@@ -1,3 +1,6 @@
+import SimpleLightbox from 'simplelightbox';
+import 'simplelightbox/dist/simple-lightbox.min.css';
+
 const images = [
   {
     preview:
@@ -68,7 +71,6 @@ const galleryEl = document.querySelector('.gallery');
 const galleryMarkup = createGalleryMarkup(images);
 
 galleryEl.insertAdjacentHTML('beforeend', galleryMarkup);
-galleryEl.addEventListener('click', onGalleryClick);
 
 function createGalleryMarkup(imageItems) {
   return imageItems
@@ -78,7 +80,6 @@ function createGalleryMarkup(imageItems) {
     <img
       class="gallery-image"
       src="${preview}"
-      data-source="${original}"
       alt="${description}"
     />
   </a>
@@ -88,19 +89,3 @@ function createGalleryMarkup(imageItems) {
     .join('');
 }
 // console.log(galleryMarkup);
-
-function onGalleryClick(event) {
-  event.preventDefault();
-  const imageEl = event.target.closest('.gallery-image');
-  if (!imageEl) {
-    return;
-  }
-
-  const largeImageURL = imageEl.dataset.source;
-  const imageDescription = imageEl.alt;
-
-  const modalInstance = basicLightbox.create(
-    `<img src="${largeImageURL}" alt="${imageDescription}" width="1112" height="640">`
-  );
-  modalInstance.show();
-}

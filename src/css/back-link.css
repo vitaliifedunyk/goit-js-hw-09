@@ -1,8 +1,9 @@
 .back-link {
   position: relative;
-  display: inline-block;
+  display: block;
+  width: fit-content;
   padding: 8px 12px 8px 32px;
-  margin-top: 32px;
+  margin: 0 0 24px 0;
   border: 1px solid #808080;
   border-radius: 8px;
   color: #2e2f42;
