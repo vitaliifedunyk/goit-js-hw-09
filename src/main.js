@@ -1,1 +1,0 @@
-import './js/name.js';
