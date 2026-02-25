@@ -89,3 +89,7 @@ function createGalleryMarkup(imageItems) {
     .join('');
 }
 // console.log(galleryMarkup);
+
+const lightBox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+});
